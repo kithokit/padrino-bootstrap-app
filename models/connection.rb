@@ -3,8 +3,6 @@ class Connection
   #include Mongoid::Timestamps # adds created_at and updated_at fields
 
   has_and_belongs_to_many :users
-  embeds_one :user1, :class_name => "User"
-  embeds_one :user2, :class_name => "User"
 
   # field <name>, :type => <type>, :default => <value>
   embeds_many :transactions
