@@ -8,6 +8,12 @@ class Transaction
   embeds_one :user2, :class_name => "User"
   embedded_in :connection
 
+  # note user 1 must be <  user 2
+
+  def create(user1, user2, amount, description)
+
+  end
+
 
 
   # You can define indexes on documents using the index macro:
